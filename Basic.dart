@@ -17,9 +17,16 @@ void main() {
   } else {
     print("noooooooooo");
   }
-  for (var j=0;j<=10;j++){
-    if (j%2==0){
+  for (var j = 0; j <= 10; j++) {
+    if (j % 2 == 0) {
       print("$j");
     }
   }
+  while (true) {
+    print("going..");
+    break;
+  }
+  do {
+    print("hllw ravi");
+  } while (r < 8.7);
 }
