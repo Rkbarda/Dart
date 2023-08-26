@@ -2,8 +2,9 @@ main() {
   dosomething();
   print("hllw ${getName()}${lastName()} ");
   var getdata = pera(a);
+  var getdata1 = "${pera(a)}";
 
-  print(" all perameter fetched $getdata");
+  print(" all perameter fetched $getdata $getdata1");
 }
 
 String a = "Ravi";
