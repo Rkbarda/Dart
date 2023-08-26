@@ -30,3 +30,28 @@ void main() {
     print("hllw ravi");
   } while (r < 8.7);
 }
+  int age = 19;
+  if (age==19){
+    print("You are old enough to buy cigrate");
+  }
+  else if(age==17){
+    print("Sorry, You can't buy a cigrate");
+    
+  }
+  else if(age==21){
+    print("you are old enough");
+  }
+  
+  switch(age){
+    case 17:
+      print("you are not allowed");
+      break;
+    case 21:
+      print("you are allowed");
+      break;
+    case 19:
+      print("its run by switch case you are allowed");
+      break;
+    default:
+      print("Default $age");
+  }
