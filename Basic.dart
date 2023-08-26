@@ -17,4 +17,9 @@ void main() {
   } else {
     print("noooooooooo");
   }
+  for (var j=0;j<=10;j++){
+    if (j%2==0){
+      print("$j");
+    }
+  }
 }
