@@ -1,17 +1,28 @@
-main(){
+main() {
   dosomething();
   print("hllw ${getName()}${lastName()} ");
+  var getdata = pera(a);
+
+  print(" all perameter fetched $getdata");
 }
 
-dosomething(){
+String a = "Ravi";
+dosomething() {
   print("hllw Functions");
   sayMyName();
 }
-sayMyName(){
+
+sayMyName() {
   print("ravi");
 }
 
-String getName(){
-  return"Ravi";
+String getName() {
+  return "Ravi";
 }
-String lastName()=> "Kumar";
+
+String lastName() => "Kumar";
+
+String pera(String data) {
+  print(data);
+  return data;
+}
