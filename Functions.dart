@@ -1,5 +1,6 @@
 main(){
   dosomething();
+  print("hllw ${getName()}${lastName()} ");
 }
 
 dosomething(){
@@ -9,3 +10,8 @@ dosomething(){
 sayMyName(){
   print("ravi");
 }
+
+String getName(){
+  return"Ravi";
+}
+String lastName()=> "Kumar";
