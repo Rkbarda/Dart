@@ -1,0 +1,40 @@
+class Person {
+  String firstname = "None";
+  String lastname = "None";
+  String nationality = "None";
+  int age = 0;
+  void showname() {
+    print(this.firstname);
+  }
+
+  void sayHello() {
+    print("hello");
+  }
+}
+
+class Ravi extends Person {
+  String? profession;
+  void showProfession() => print(profession);
+}
+
+class Vinod extends Person {
+  String? profession;
+  void showProfession() => print(profession);
+  @override
+  void sayHello() {
+    print("Namaste");
+  }
+}
+
+void main() {
+  var vinod = Vinod();
+  vinod.firstname = "Vinod";
+  vinod.showname();
+  vinod.sayHello();
+  var ravi = Ravi();
+  ravi.firstname = "Ravi";
+  ravi.profession = "Programmer";
+  ravi.showname();
+  ravi.sayHello();
+  print(ravi.profession);
+}
