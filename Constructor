@@ -1,1 +1,40 @@
+class Microphones {
+  // Instance varibale, member variables
+  String? name;
+  String? color;
+  int model = 2022;
+  //syntactic sugar Constructor
+// Mrophones(this.name,this.color,this.model);
+  Microphones(String name, String color, int model) {
+    this.color = color;
+    this.name = name;
+    this.model = model;
+  }
+  void turnOff() {
+    print("$name is turned Off");
+  }
+
+  void turnOn() {
+    print("$name is turned On");
+  }
+
+  void setVolume(int i) {
+    print("$name is set to volume level $i");
+  }
+
+  bool isOn() => true;
+
+  int modelNumber() => model;
+}
+
+void main() {
+  var mic = Microphones("Blue Yeti", "blue",
+      2023); // Here i created the actually object of type mic
+
+  print(mic.model); //.(dot) access operator
+  mic.turnOn();
+  mic.setVolume(5);
+  print(mic.isOn());
+  print(mic.modelNumber());
+}
 
