@@ -1,1 +1,15 @@
+class Microphones{
+  // Instance varibale, member variables
+  String? name;
+  String? color;
+  int? model = 2022;
+  
+}
 
+void main(){
+  var mic=new Microphones();// Here i created the actually object of type mic
+  mic.name="Blue Yeti";
+  mic.color="blue";
+
+  print(mic.model);//.(dot) access operator
+}
