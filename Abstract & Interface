@@ -1,0 +1,45 @@
+abstract class Animal {
+  void breathe();
+  void makeNoice();
+}
+abstract class IsFunny {
+  void makePeopleLaugh();
+}
+
+class Person implements Animal {
+  String? name;
+  String? nationality;
+  @override
+  void breathe() {
+    print("Its Breathing");
+  }
+
+  @override
+  void makeNoice() {
+    print(" its making noice");
+  }
+
+  Person(this.name, this.nationality);
+  String toString() => "$name $nationality";
+}
+class Comedian extends Person implements IsFunny {
+  Comedian(String name, String nationality) : super(name, nationality);
+  @override
+  void makePeopleLaugh() {
+    print("Comedian Making People Laugh");
+  }
+}
+
+
+
+
+
+main() {
+  var ravi = new Person("Ravi","Indian");
+  
+  var comedian=new Comedian("Ravi","Indian");
+  ravi.breathe();
+  ravi.makeNoice();
+  comedian.makeNoice();
+  comedian.makePeopleLaugh();//fetched from abstract class
+}
