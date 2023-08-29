@@ -1,0 +1,53 @@
+class Persons {
+  String? name;
+  Persons(this.name);
+}
+
+main() {
+  var list = [1, 24, 3, 42, 5, 20];
+  print(list[0]);
+  print("Length of List in ${list.length}");
+  for (int i = 0; i < list.length; i++) {
+    print("Index $i have value ${list[i]}");
+  }
+
+  List<String> onlyStrings = [];
+
+  onlyStrings.add("Ravi");
+  onlyStrings.add("Sahil");
+  onlyStrings.add("Sukhjit");
+  for (int i = 0; i < onlyStrings.length; i++) {
+    print(onlyStrings[i]);
+  }
+
+  var sukhjit = new Persons("Sukhjit");
+  var ajay = new Persons("Ajay");
+  var ravi = new Persons("Ravi");
+  var kulbhushan = new Persons("Kulbhushan");
+  var sahil = new Persons("Sahil");
+
+  List<Persons> personList = [];
+  personList.add(sukhjit);
+  personList.add(ravi);
+  personList.add(kulbhushan);
+  personList.add(sahil);
+  personList.add(ajay);
+  for (int i = 0; i < personList.length; i++) {
+    print(personList[i]);
+    print(personList[i].name);
+  }
+
+  var map = {"A": 1, "B": 2, "C": 3};
+  print(map["A"]);
+  map.forEach(
+  (k,v)=>print(k));
+  print(map.keys);
+  print(map.values);
+  
+  var map2={};
+  for (int i=1;i<=10;i++){
+    map2[i]=i+4;
+    
+  }
+  print(map2);
+}
