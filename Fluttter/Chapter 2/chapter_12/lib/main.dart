@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    color: Colors.deepPurpleAccent,
+
     title: "Layouts",
     home: new Home(),
   ));
