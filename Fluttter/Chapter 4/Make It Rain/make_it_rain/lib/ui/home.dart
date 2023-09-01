@@ -19,6 +19,7 @@ class MakeItRainState extends State<MakeItRain> {
     print(_moneyCounter);
     setState(
       () {
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
         if (_textSize <= 80) {
           _textSize = _textSize + 4;
         }
@@ -45,6 +46,7 @@ class MakeItRainState extends State<MakeItRain> {
   void _donateMoney() {
     setState(
       () {
+        ScaffoldMessenger.of(context).hideCurrentSnackBar();
         if (_textSize >= 34) {
           _textSize = _textSize - 4;
         }
