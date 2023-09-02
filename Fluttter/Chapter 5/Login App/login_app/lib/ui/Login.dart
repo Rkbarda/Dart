@@ -42,7 +42,7 @@ class LoginState extends State {
               height: 20.0,
             ),
             Container(
-              height: 150.0,
+              height: 180.0,
               width: 380.0,
               color: Colors.white,
               child: Column(
@@ -62,19 +62,22 @@ class LoginState extends State {
                     decoration: InputDecoration(
                         hintText: "Password", icon: Icon(Icons.lock)),
                   ),
-                  Center(
-                    child: Container(
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                                child: TextButton(
-                              onPressed: () => debugPrint("PRessed"),
-                              child: Text("Login"),
-                            ))
-                          ],
-                        )),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Center(
+                      child: Container(
+                          alignment: Alignment.center,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                  child: TextButton(
+                                onPressed: () => debugPrint("PRessed"),
+                                child: Text("Login"),
+                              ))
+                            ],
+                          )),
+                    ),
                   )
                 ],
               ),
