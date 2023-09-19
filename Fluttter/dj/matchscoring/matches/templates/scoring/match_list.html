@@ -1,0 +1,16 @@
+<!-- scoring/match_list.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Match List</h1>
+  <ul>
+    {% for match in matches %}
+      <li>
+        <a href="{% url 'match_details' match.id %}">
+          {{ match.team_a }} vs. {{ match.team_b }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -26,7 +26,7 @@ class LoginState extends State {
       backgroundColor: Colors.lightBlueAccent,
       body: Container(
         alignment: Alignment.center,
-        child: Column(
+        child: ListView(
           children: [
             SizedBox(
               height: 20,
@@ -61,6 +61,7 @@ class LoginState extends State {
                     controller: _passController,
                     decoration: InputDecoration(
                         hintText: "Password", icon: Icon(Icons.lock)),
+                    obscureText: true,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -74,6 +75,11 @@ class LoginState extends State {
                                   child: TextButton(
                                 onPressed: () => debugPrint("PRessed"),
                                 child: Text("Login"),
+                              )),
+                              Container(
+                                  child: TextButton(
+                                onPressed: () => debugPrint("PRessed"),
+                                child: Text("Clear"),
                               ))
                             ],
                           )),
@@ -82,6 +88,15 @@ class LoginState extends State {
                 ],
               ),
             ),
+            SizedBox(height: 15),
+            Container(
+              child: Center(
+                child: Text(
+                  "Welcome, Ravi",
+                  style: TextStyle(fontSize: 25, color: Colors.white),
+                ),
+              ),
+            )
           ],
         ),
       ),

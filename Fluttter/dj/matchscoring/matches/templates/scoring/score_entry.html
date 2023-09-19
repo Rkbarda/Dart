@@ -1,0 +1,13 @@
+<!-- scoring/score_entry.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Score Entry</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+  <a href="{% url 'match_details' match.id %}">Back to Match Details</a>
+{% endblock %}
